@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dropdownShow.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/title logo.png"/>
+
+    <title>East Zone</title>
+    <style>
+        h1 {
+            color: red;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: justify;
+            margin-top: 15px;
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+        .download {
+            margin-left: 10px;
+        }
+
+        .download a {
+            text-decoration: none;
+            /* color: black; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(245, 245, 171);">
+        <div class="container-fluid">
+            <div class="col-2">
+                <a class="navbar-brand"><img src="images/Monument_Masters_Logo.png" width="150px" alt=""></a>
+            </div>
+            <div class="col-9">
+                <form class="d-flex">
+                    <input class="form-control " text-center type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-1">
+
+            </div>
+
+        </div>
+    </nav> -->
+
+    <nav class="navbar sticky-lg-top navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="" style="font-weight: bolder;"><img src="images/Monument_Masters_Logo.png" width="150px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="zone.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Zones
+                        </a>
+                        <ul class="dropdown-menu active text-center w-25 mx-auto" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="north.html">North</a></li>
+                            <li><a class="dropdown-item" href="east.html">East</a></li>
+                            <li><a class="dropdown-item" href="west.html">West</a></li>
+                            <li><a class="dropdown-item" href="south.html">South</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Seven Wonders
+                        </a>
+                        <ul class="dropdown-menu active text-center w-35 mx-auto" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="wonder 1.html">Pyramid Of Giza</a></li>
+                            <li><a class="dropdown-item" href="wonder 2.html">Colossus Of Rhodes</a></li>
+                            <li><a class="dropdown-item" href="wonder 3.html">Hanging Garden Of Babylon</a></li>
+                            <li><a class="dropdown-item" href="wonder 4.html">Lighthouse Of Alexandria</a></li>
+                            <li><a class="dropdown-item" href="wonder 5.html">Mausoleum At halicarnassus</a></li>
+                            <li><a class="dropdown-item" href="wonder 6.html">Statue Of Zeus At Olympia</a></li>
+                            <li><a class="dropdown-item" href="wonder 7.html">Temple Of Artemis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="site map.html">Site Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="query.html">Queries</a>
+                    </li>
+                </ul>
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1 style="text-align: center;">EAST ZONE</h1>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Borobudur Temple | Indonesia</h1>
+                <img src="images/borobdur.jpeg" width="100%" class="img-fluid" alt="...">
+            </div>
+            <div data-city="petra">
+                <p>One of the largest Buddhist temples in the world, Borobudur Temple in Indonesia is an impressive
+                    archaeological site for many reasons. This sprawling temple complex dates back to the 8th and 9th
+                    century and displays exquisite architecture that includes five square terraces and three circular
+                    platforms. This historic monument is also a famous pilgrimage site for the Buddhists and is visited
+                    by a large number of monks and travelers from across the world.
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        <br>
+                        Nestled within Java’s lush greenery stands Borobudur, the globe’s grandest Buddhist sanctuary
+                        and an emblem of devotion, balance, and artistry. Dating back to the 9th century, this
+                        architectural gem serves dual purposes: an homage to Lord Buddha and a beacon for Buddhist
+                        pilgrims. The ascent starts from the base, spiraling around three symbolic tiers, mirroring the
+                        Buddhist cosmos: Kāmadhātu, Rupadhatu, and Arupadhatu.
+                        Delicately carved panels depict tales from Buddhist scriptures, offering glimpses into ancient
+                        Javanese life. Adorned with stupas and serene Buddha effigies, Borobudur transcends mere
+                        worship, encapsulating the Buddhist cosmic perspective in stone. <br>
+
+                        <b>Best Time to Visit Borobudur Temples, Indonesia: April to August</b> </span>
+                </p>
+
+                <button onclick="readMore('petra')" class="myBtn btn btn-outline-danger btn">Read more</button>
+                <button class="btn btn-outline-warning btn download"><a href="download links/petra.docx"
+                        download>Download File</a></button>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Angkor Wat | Cambodia</h1>
+                <img src="images/Angkor wat.jfif" width="100%" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12" data-city="Pyramids">
+                <p>Built by Suryavarman II, Angkor Wat is the iconic surviving temple dedicated to Lord Shiva, Vishnu
+                    and Brahma. This historic site is also featured on the national flag of Cambodia. This temple
+                    complex dates back to the 12th century and has many fascinating stories that mystifies historians
+                    and travelers alike. Perched atop a mountain, this expansive temple complex is dotted with thousands
+                    of monuments that are adorned with exquisite sculptures of Hindu gods, scenes drawn from Indian
+                    epics and sights of Khmer. Angkor Wat is one of the cultural wonders of the world and therefore must
+                    be on your wish list.
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        <br>
+                        Emerging from the dense Cambodian jungles is the sublime Angkor Wat, the most colossal religious
+                        monument globally. Commissioned by King Suryavarman II in the early 12th century as a Hindu
+                        temple dedicated to the god Vishnu, its design represents Mount Meru, the home of the gods in
+                        Hindu mythology. <br>
+                        The temple’s galleries are adorned with intricate bas-reliefs depicting scenes from Hindu epics,
+                        showcasing the zenith of Khmer art. However, the temple’s true genius is its alignment with
+                        celestial patterns, particularly the spring equinox. <br>
+                        Over the decades, as Buddhism flourished in the region, Angkor Wat underwent a religious
+                        transformation, reflecting the region’s evolving spiritual landscape. Today, its majestic towers
+                        and intricate carvings continue to captivate visitors, offering a glimpse into the spiritual and
+                        artistic fervor of ancient Cambodia.
+                        <br>
+                        <b>Best Time to Visit Angkor Wat, Cambodia: November to March</b>
+                    </span>
+                </p>
+                <button onclick="readMore('Pyramids')" class="myBtn btn btn-outline-danger btn">Read more</button>
+                <button class="btn btn-outline-warning btn download"><a href="download links/petra.docx"
+                        download>Download File</a></button>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1>AYUTTHAYA</h1>
+                <img src="images/ayuthaya.jfif" width="100%" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12" data-city="china">
+                <p>Ayutthaya full name Phra Nakhon Si Ayutthaya is an ancient capital and modern city in the Central
+                    Plains of Thailand, 85 km (53 mi) north of Bangkok. <br>
+                    It was capital of the Kingdom of Siam, and a prosperous international trading port, from 1350 until
+                    razed by the Burmese in 1767. The ruins of the old city now form the Ayutthaya Historical Park, an
+                    archaeological site that contains palaces, Buddhist temples, monasteries and statues. The park is on
+                    an island between 3 rivers. <b></b>
+                    Once an important center of global diplomacy and commerce, Ayutthaya is now an archaeological ruin,
+                    characterized by the remains of tall prang (reliquary towers) and Buddhist monasteries of monumental
+                    proportions, which give an idea of the city's past size and the splendor of its architecture.
+
+
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        <br>
+                        Founded around 1350, Ayutthaya became the second capital of Siam after Sukhothai. It was named
+                        after the city of Ayodhya in India, where legend has it Rama, one of the avatars of the Hindu
+                        god Vishnu, had his capital city, and whose rule is considered by Hindus to be the epitome of
+                        good governance and moral society. <br>
+                        Ayutthaya is an island at the confluence of three rivers: the Chao Phraya river, the Lopburi
+                        River, and the Pa Sak River. As the train station is on the east bank off the island, most
+                        visitors will need to cross the river by ferry boat. Navigating your way around the island is
+                        not particularly hard: U Thong Rd is a ring road that circles the island completely.
+                    </span>
+                </p>
+                <button onclick="readMore('china')" class="myBtn btn btn-outline-danger btn">Read more</button>
+                <button class="btn btn-outline-warning btn download"><a href="download links/petra.docx"
+                        download>Download File</a></button>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h1>LUANG PHABANG</h1>
+                <img src="images/Luang Phabang.jfif" width="100%" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12" data-city="taj">
+                <p>Luang Prabang, the ancient capital of Luang Prabang Province in northern Laos, lies in a valley at
+                    the confluence of the Mekong and Nam Khan rivers. Inhabited for thousands of years, it was the royal
+                    capital of the country until 1975. It’s known for its many Buddhist temples, including the gilded
+                    Wat Xieng Thong, dating to the 16th century, and Wat Mai, once the residence of the head of Laotian
+                    Buddhism. <br>
+                    Luang Phabang consisting of 58 adjacent villages, of which 33 comprise the UNESCO Town of Luang
+                    Prabang World Heritage Site. It was listed in 1995 for unique and "remarkably" well preserved
+                    architectural, religious and cultural heritage, a blend of the rural and urban developments over
+                    several centuries, including the French colonial influences during the 19th and 20th centuries.
+                    <span class="dots">...</span>
+                    <span class="more" style="display: none;">
+                        <br>
+                        Luang Prabang is exceptional for both its rich architectural and artistic heritage that reflects the fusion of Lao traditional urban architecture with that of the colonial era. Its remarkably well-preserved townscape reflects the alliance of these two distinct cultural traditions.
+                        The political and religious centre of Luang Prabang is the peninsula, with its royal and noble residences and religious foundations. <br>
+                        
+                        The centre of the city consists of four main roads and is located on a peninsula at the confluence of the Nam Khan and Mekong River. Luang Prabang is well known for its numerous Buddhist temples and monasteries. Every morning, hundreds of monks from the various monasteries walk through the streets collecting alms. One of the city's major landmarks is Mount Phou Si; a large steep hill which despite the constrained scale of the city, is 150 metres (490 ft) high; a steep staircase leads to Wat Chom Si shrine and an overlook of the city and the rivers. <br>
+                        The city was formerly the capital of a kingdom of the same name. It had also been known by the ancient name of Xieng Thong. It was the royal capital and seat of government of the Kingdom of Laos, until the Pathet Lao takeover in 1975. The city is part of Luang Prabang District of Luang Prabang Province and is the capital and administrative centre of the province. It lies approximately 300 km (190 mi) north of the capital Vientiane. Currently, the population of the city as a whole is roughly 56,000 inhabitants with the UNESCO protected site being inhabited by around 24,000.
+                        </span>
+                </p>
+                <button onclick="readMore('taj')" class="myBtn btn btn-outline-danger btn">Read more</button>
+                <button class="btn btn-outline-warning btn download"><a href="download links/petra.docx"
+                        download>Download File</a></button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row bg-dark text-white align-items-center">
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <img src="images/Monument_Masters_Logo.png" width="200px" alt="">
+                    <h5 class="text-uppercase">All about Historical Monuments</h5>
+                    <p class="text-md-center">The place where you will find each and every thing about World's Historical Monuments.</p>
+                </div>
+
+
+
+                <hr class="clearfix w-100 d-md-none pb-3 ">
+
+                <div class="col-md-3 mb-md-0 mb-3 align-items-end ">
+
+                    <h5 class="text-uppercase" style="margin-top: 20px;">Links Seven Wonders</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="wonder 1.html">Pyramid Of Giza</a>
+                        </li>
+                        <li>
+                            <a href="wonder 2.html">Colossus Of Rhodes</a>
+                        </li>
+                        <li>
+                            <a href="wonder 3.html">Hanging Garden Of Babylon</a>
+                        </li>
+                        <li>
+                            <a href="wonder 4.html">Lighthouse of Alexandria</a>
+                        </li>
+                        <li>
+                            <a href="wonder 5.html">Mausoleum At Halicarnassus</a>
+                        </li>
+                        <li>
+                            <a href="wonder 6.html">Statue Of Zeus At olympia</a>
+                        </li>
+                        <li>
+                            <a href="wonder 7.html">Temple Of Artemis</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-1 mb-md-0 mb-3 align-items-end ">
+
+                    <h5 class="text-uppercase" style="margin-top: 20px;">Links zones</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="north.html">North</a>
+                        </li>
+                        <li>
+                            <a href="east.html">East</a>
+                        </li>
+                        <li>
+                            <a href="west.html">West</a>
+                        </li>
+                        <li>
+                            <a href="south.html">South</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-1 mb-md-0 mb-3 align-items-end ">
+
+                    <h5 class="text-uppercase" style="margin-top: 20px;">Links pages</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="contact us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="site map.html">Site Map</a>
+                        </li>
+                        <li>
+                            <a href="query.html">Queries</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">CONTACT US</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">021-111-123-111</a>
+                        </li>
+                        <li>
+                            <a href="#!">www.monument.com</a>
+                        </li>
+                        <li>
+                            <a href="#!">info@monument.com</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" style="background-color: #3b5998; margin-top: 10px;"
+                                href="https://www.facebook.com" role="button"><i class="fa fa-facebook-f"></i></a>
+                            <a class="btn btn-primary" style="background-color: #ac2bac; margin-top: 10px;"
+                                href="https://www.instagram.com" role="button"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-primary" style="background-color: #55acee; margin-top: 10px;"
+                                href="https://www.twitter.com" role="button"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-primary" style="background-color: #c61118; margin-top: 10px;"
+                                href="https://www.pinterest.com" role="button"><i class="fa fa-pinterest"></i></a>
+                            <a class="btn btn-primary" style="background-color: #0082ca; margin-top: 10px;"
+                                href="https://www.linkedin.com" role="button"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2024 Copyright:
+            <a href="https://monumentmalyasiaproject.web.app/">Monument.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+        function readMore(city) {
+            let dots = document.querySelector(`[data-city="${city}"] .dots`);
+            let moreText = document.querySelector(`[data-city="${city}"] .more`);
+            let btnText = document.querySelector(`[data-city="${city}"] .myBtn`);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.textContent = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.textContent = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>

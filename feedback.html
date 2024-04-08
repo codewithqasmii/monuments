@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="dropdownShow.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/title logo.png"/>
+
+    <title>Feedback</title>
+    <link rel="stylesheet" href="dropdownShow.css">
+    <link rel="stylesheet" href="star.css">
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        .feed {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV BAR  -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(245, 245, 171);">
+        <div class="container-fluid">
+            <div class="col-2">
+                <a class="navbar-brand"><img src="images/Monument_Masters_Logo.png" width="150px" alt=""></a>
+            </div>
+            <div class="col-9">
+                <form class="d-flex">
+                    <input class="form-control " text-center type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-1">
+
+            </div>
+
+        </div>
+    </nav> -->
+
+    <nav class="navbar sticky-lg-top navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="" style="font-weight: bolder;"><img src="images/Monument_Masters_Logo.png"
+                    width="150px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link  aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="zone.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Zones
+                        </a>
+                        <ul class="dropdown-menu active text-center w-25 mx-auto" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="north.html">North</a></li>
+                            <li><a class="dropdown-item" href="east.html">East</a></li>
+                            <li><a class="dropdown-item" href="west.html">West</a></li>
+                            <li><a class="dropdown-item" href="south.html">South</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Seven Wonders
+                        </a>
+                        <ul class="dropdown-menu active text-center w-35 mx-auto" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="wonder 1.html">Pyramid Of Giza</a></li>
+                            <li><a class="dropdown-item" href="wonder 2.html">Colossus Of Rhodes</a></li>
+                            <li><a class="dropdown-item" href="wonder 3.html">Hanging Garden Of Babylon</a></li>
+                            <li><a class="dropdown-item" href="wonder 4.html">Lighthouse Of Alexandria</a></li>
+                            <li><a class="dropdown-item" href="wonder 5.html">Mausoleum At halicarnassus</a></li>
+                            <li><a class="dropdown-item" href="wonder 6.html">Statue Of Zeus At Olympia</a></li>
+                            <li><a class="dropdown-item" href="wonder 7.html">Temple Of Artemis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="site map.html">Site Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="query.html">Queries</a>
+                    </li>
+                </ul>
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <img src="images/feedback logo.jpg" width="100%" class="img-fluid" alt="...">
+
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 ">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" required class="form-control" id="name" placeholder="Your Name"
+                                    pattern="[^0-9]*" title="First name cannot contains any digits">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" required class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea required class="form-control" placeholder="Leave a message here" id="message"
+                                    style="height: 100px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-danger w-100 py-3" type="submit" onclick="sub()">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 feed">
+                <h3 style="margin-top: 20px;">Give Us FeedBack</h3>
+                <span onclick="gfg(1)" class="star">★</span>
+                <span onclick="gfg(2)" class="star">★</span>
+                <span onclick="gfg(3)" class="star">★</span>
+                <span onclick="gfg(4)" class="star">★</span>
+                <span onclick="gfg(5)" class="star">★</span>
+                <h3 id="output">0/5</h3>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row bg-dark text-white align-items-center">
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <img src="images/Monument_Masters_Logo.png" width="200px" alt="">
+                    <h5 class="text-uppercase">All about Historical Monuments</h5>
+                    <p class="text-md-center">The place where you will find each and every thing about World's Historical Monuments.</p>
+                </div>
+
+
+
+                <hr class="clearfix w-100 d-md-none pb-3 ">
+
+                <div class="col-md-3 mb-md-0 mb-3 align-items-end ">
+
+                    <h5 class="text-uppercase" style="margin-top: 20px;">Links Seven Wonders</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="wonder 1.html">Pyramid Of Giza</a>
+                        </li>
+                        <li>
+                            <a href="wonder 2.html">Colossus Of Rhodes</a>
+                        </li>
+                        <li>
+                            <a href="wonder 3.html">Hanging Garden Of Babylon</a>
+                        </li>
+                        <li>
+                            <a href="wonder 4.html">Lighthouse of Alexandria</a>
+                        </li>
+                        <li>
+                            <a href="wonder 5.html">Mausoleum At Halicarnassus</a>
+                        </li>
+                        <li>
+                            <a href="wonder 6.html">Statue Of Zeus At olympia</a>
+                        </li>
+                        <li>
+                            <a href="wonder 7.html">Temple Of Artemis</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-1 mb-md-0 mb-3 align-items-end ">
+
+                    <h5 class="text-uppercase" style="margin-top: 20px;">Links zones</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="north.html">North</a>
+                        </li>
+                        <li>
+                            <a href="east.html">East</a>
+                        </li>
+                        <li>
+                            <a href="west.html">West</a>
+                        </li>
+                        <li>
+                            <a href="south.html">South</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-1 mb-md-0 mb-3 align-items-end ">
+
+                    <h5 class="text-uppercase" style="margin-top: 20px;">Links pages</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="contact us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="feedback.html">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="site map.html">Site Map</a>
+                        </li>
+                        <li>
+                            <a href="query.html">Queries</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">CONTACT US</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">021-111-123-111</a>
+                        </li>
+                        <li>
+                            <a href="#!">www.monument.com</a>
+                        </li>
+                        <li>
+                            <a href="#!">info@monument.com</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" style="background-color: #3b5998; margin-top: 10px;"
+                                href="https://www.facebook.com" role="button"><i class="fa fa-facebook-f"></i></a>
+                            <a class="btn btn-primary" style="background-color: #ac2bac; margin-top: 10px;"
+                                href="https://www.instagram.com" role="button"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-primary" style="background-color: #55acee; margin-top: 10px;"
+                                href="https://www.twitter.com" role="button"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-primary" style="background-color: #c61118; margin-top: 10px;"
+                                href="https://www.pinterest.com" role="button"><i class="fa fa-pinterest"></i></a>
+                            <a class="btn btn-primary" style="background-color: #0082ca; margin-top: 10px;"
+                                href="https://www.linkedin.com" role="button"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2024 Copyright:
+            <a href="https://monumentmalyasiaproject.web.app/">Monument.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</html>
+<script>
+    function sub(){
+        alert("THANKS FOR YOUR FEEDBACK")
+    }
+</script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script>
+    // To access the stars
+    let stars =
+        document.getElementsByClassName("star");
+    let output =
+        document.getElementById("output");
+
+    // Funtion to update rating
+    function gfg(n) {
+        remove();
+        for (let i = 0; i < n; i++) {
+            if (n == 1) cls = "one";
+            else if (n == 2) cls = "two";
+            else if (n == 3) cls = "three";
+            else if (n == 4) cls = "four";
+            else if (n == 5) cls = "five";
+            stars[i].className = "star " + cls;
+        }
+        output.innerText = "" + n + "/5";
+    }
+
+    // To remove the pre-applied styling
+    function remove() {
+        let i = 0;
+        while (i < 5) {
+            stars[i].className = "star";
+            i++;
+        }
+    }
+
+</script>
+
+
+
+</body>
+
+</html>

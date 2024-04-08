@@ -1,0 +1,48 @@
+p {
+    text-align: justify;
+}
+H1{
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 5px brown;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.card img {
+    transition: transform 5s ease;
+
+}
+
+.card {
+    overflow: hidden;
+    border-style: none;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+    /* transform: rotateY(180deg); */
+}
+.seven{
+    display: none;
+}
+/* .north{
+    display: none;
+} */
+.east{
+    display: none;
+}
+.west{
+    display: none;
+}
+.south{
+    display: none;
+}
+.all{
+    display: none;
+}

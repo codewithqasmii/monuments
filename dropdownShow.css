@@ -1,0 +1,152 @@
+/* Navbar container */
+/* .navbar { 
+    background-color: #333;
+    font-family: Arial;
+  }  */
+  
+  /* Links inside the navbar */
+  /* .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+  
+  /* The dropdown container */
+  .cli {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .cli .clibtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  /* .navbar a:hover, .cli:hover .clibtn { */
+    /* background-color: red; */
+  /* } */
+  
+  /* Dropdown content (hidden by default) */
+  .cli-content {
+    margin: auto;
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    width: 99%;
+    left: 0;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  /* Mega Menu header, if needed */
+  .cli-content .header {
+    background: red;
+    /* padding: 16px;
+    color: black; */
+  }
+  
+  /* Show the dropdown menu on hover */
+  .cli:hover .cli-content {
+    display: block;
+    margin: auto;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(236, 241, 196);
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap ;
+  }
+  
+  /* Style links inside the columns */
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a background color on hover */
+  /* .column a:hover {
+    background-color: #ddd;
+  } */
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 2px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 2px;
+    background: red;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  p {
+    text-align: justify;
+}
+
+h3 {
+    color: red;
+
+}
+
+h4 {
+    margin-top: 10px;
+    color: rgb(247 221 2);
+    font-weight: bold;
+}

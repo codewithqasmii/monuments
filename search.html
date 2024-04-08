@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #results {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#results li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#results li:hover {
+  background-color: #f5f5f5;
+}
+    </style>
+</head>
+<body>
+    <input type="text" id="searchBox" oninput="runSearch()" placeholder="Search...">
+<div id="results"></div>
+
+<script>
+    const searchBox = document.getElementById('searchBox');
+const resultsContainer = document.getElementById('results');
+const searchTerms = [
+  { page: 'https://example.com/page1.html', title: 'Page 1' },
+  { page: 'https://example.com/page2.html', title: 'Page 2' },
+  { page: 'https://example.com/page3.html', title: 'Page 3' },
+];
+
+function runSearch() {
+  const searchTerm = searchBox.value.toLowerCase();
+  const results = searchPage(searchTerm);
+
+  displayResults(results);
+}
+
+function searchPage(searchTerm) {
+  const results = [];
+
+  searchTerms.forEach(term => {
+    fetch(term.page)
+      .then(response => response.text())
+      .then(content => {
+        const searchRegex = new RegExp('\\b' + searchTerm + '\\b', 'i');
+        const searchMatches = content.match(searchRegex);
+
+        if (searchMatches && searchMatches.length > 0) {
+          searchMatches.forEach(match => {
+            results.push({
+              title: term.title,
+              url: term.page,
+              position: content.indexOf(match),
+              text: match,
+            });
+          });
+        }
+
+        if (results.length > 0) {
+          displayResults(results);
+        } else {
+          resultsContainer.innerHTML = 'No results found.';
+        }
+      })
+      .catch(error => {
+        console.error('Error loading page content:', error);
+      });
+  });
+}
+
+function displayResults(results) {
+  resultsContainer.innerHTML = '';
+  if (results.length === 0) {
+    resultsContainer.innerHTML = 'No results found.';
+    return;
+  }
+
+  const list = document.createElement('ul');
+  list.addEventListener('click', event => {
+    if (event.target.tagName === 'A') {
+      window.open(event.target.href, '_blank');
+    }
+  });
+
+  results.forEach(result => {
+    const listItem = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = result.url;
+    link.textContent = `${result.text} (found in ${result.title})`;
+    listItem.appendChild(link);
+    list.appendChild(listItem);
+  });
+
+  resultsContainer.appendChild(list);
+  resultsContainer.style.display = 'block';
+}
+</script>
+</body>
+</html>
